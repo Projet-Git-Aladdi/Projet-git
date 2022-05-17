@@ -42,7 +42,7 @@ DoublyLinkedList* createDoublyLinkedList (void) {
 DoublyLinkedList* createDoublyLinkedListFromString (const char* digitString) {
     return NULL;
 }
-
+ //
 char digitToChar (const Digit digit) {
     return 0;
 }

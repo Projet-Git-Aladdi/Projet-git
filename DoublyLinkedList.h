@@ -30,5 +30,5 @@ extern void              removeStartFromDoublyLinkedList  (DoublyLinkedList* dou
 extern void              removeEndFromDoublyLinkedList    (DoublyLinkedList* doublyLinkedList);
 extern Digit             getDigitByPlaceFromStart         (const DoublyLinkedList* doublyLinkedList, const unsigned int place);
 
-//
+// //
 #endif //PROJET_GIT_DOUBLYLINKEDLIST_H
