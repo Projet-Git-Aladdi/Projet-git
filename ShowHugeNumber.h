@@ -1,9 +1,9 @@
 #ifndef SHOW_HUGE_NUMBER
 #define SHOW_HUGE_NUMBER
 
-#include "../UseHugeNumber/Type/HugeFloat.h"
-#include "../UseHugeNumber/Type/HugeInt.h"
-#include "../UseHugeNumber/Type/HugeUnsignedInt.h"
+#include "HugeFloat.h"
+#include "HugeInt.h"
+#include "HugeUnsignedInt.h"
 
 extern void printHugeUnsignedInt (const HugeUnsignedInt* hugeUnsignedInt);
 extern void printHugeInt         (const HugeInt* hugeInt);

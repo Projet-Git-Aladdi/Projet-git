@@ -1,7 +1,7 @@
 #ifndef OPERATOR_HUGE_INT
 #define OPERATOR_HUGE_INT
 
-#include "../Type/HugeInt.h"
+#include "HugeInt.h"
 #include "HugeUnsignedIntOperator.h"
 
 extern HugeInt* addHugeInt       (const HugeInt* operand1, const HugeInt* operand2);
