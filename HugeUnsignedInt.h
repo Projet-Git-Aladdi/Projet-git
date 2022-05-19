@@ -1,7 +1,7 @@
 #ifndef HUGE_UNSIGNED_INT
 #define HUGE_UNSIGNED_INT
 
-#include "../../DataTypes/DoublyLinkedList.h"
+#include "DoublyLinkedList.h"
 
 typedef DoublyLinkedList HugeUnsignedInt;
 
