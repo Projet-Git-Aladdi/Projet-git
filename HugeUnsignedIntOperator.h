@@ -1,8 +1,8 @@
 #ifndef OPERATOR_HUGE_UNSIGNED_INT
 #define OPERATOR_HUGE_UNSIGNED_INT
 
-#include "../Type/HugeUnsignedInt.h"
-#include "../Type/HugeInt.h"
+#include "HugeUnsignedInt.h"
+#include "HugeInt.h"
 
 extern HugeUnsignedInt* addHugeUnsignedInt                 (const HugeUnsignedInt* operand1, const HugeUnsignedInt* operand2);
 extern HugeInt*         substractHugeUnsignedInt           (const HugeUnsignedInt* operand1, const HugeUnsignedInt* operand2);
