@@ -6,8 +6,9 @@
 #include "HugeUnsignedInt.h"
 
 extern void printHugeUnsignedInt (const HugeUnsignedInt* hugeUnsignedInt);
-extern void printHugeInt         (const HugeInt* hugeInt);
-extern void printHugeFloat       (const HugeFloat* hugeFloat);
+extern void printHugeInt(const HugeInt* hugeInt);
+extern void printHugeFloat(const HugeFloat* hugeFloat);
+static char* HugeUnsignedIntToString (const HugeUnsignedInt* hugeUnsignedInt);
 static char* HugeIntToString (const HugeInt* hugeInt);
 static char* HugeFloatToString (const HugeFloat* hugeFloat);
 
