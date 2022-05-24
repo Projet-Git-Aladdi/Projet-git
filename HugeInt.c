@@ -1,6 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "HugeInt.h"
+#include <stdlib.h>
+#include "DoublyLinkedList.h"
+#include "HugeFloat.h"
+#include "HugeFloatOperator.h"
+#include "HugeInt.h"
+#include "HugeIntOperator.h"
+#include "HugeUnsignedInt.h"
+#include "HugeUnsignedIntOperator.h"
+#include "ScanHugeNumber.h"
+#include "ShowHugeNumber.h"
 
 HugeInt* createHugeInt (void) {
     HugeInt* hugeInt = malloc (sizeof (HugeInt));
@@ -45,7 +54,7 @@ HugeInt* createHugeIntFromHugeInt (const HugeInt* hugeInt, const unsigned int si
     return hugeIntCopy;
 }
 
-void deleteHugeInt (HugeInt* hugeInt) {
+void deleteHugeInt (const HugeInt* hugeInt) {
     if (hugeInt != NULL) {
         deleteHugeUnsignedInt (hugeInt->absoluteValue);
         free (hugeInt);
@@ -59,9 +68,16 @@ int getHugeIntLength (const HugeInt* hugeInt) {
     return 0;
 }
 
-HugeInt* simplifyHugeInt (HugeInt* hugeInt) {
+HugeInt* simplifyHugeInt (const HugeInt* hugeInt) {
     if (hugeInt != NULL) {
         simplifyHugeUnsignedInt (hugeInt->absoluteValue);
     }
     return hugeInt;
+}
+
+
+void printHugeInt (const HugeInt* hugeInt) {
+    char* hugeIntString = HugeIntToString(hugeInt);
+    printf ("%s\n", hugeIntString);
+    free (hugeIntString);
 }
