@@ -11,6 +11,7 @@
 #include "ScanHugeNumber.h"
 #include "ShowHugeNumber.h"
 
+
 HugeInt* createHugeInt (void) {
     HugeInt* hugeInt = malloc (sizeof (HugeInt));
 
