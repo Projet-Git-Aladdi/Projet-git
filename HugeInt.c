@@ -75,6 +75,7 @@ HugeInt* simplifyHugeInt (const HugeInt* hugeInt) {
     return hugeInt;
 }
 
+
 void printHugeInt (const HugeInt* hugeInt) {
     char* hugeIntString = HugeIntToString(hugeInt);
     printf ("%s\n", hugeIntString);
